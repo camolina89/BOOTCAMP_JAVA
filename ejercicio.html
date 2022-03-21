@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Ejercicios Basicos de Java </h2>
+    <script>
+        var h = "Hola Mundo Javascript";
+        let h2 = "Hello Word";
+        var musica = "Rock"
+        console.log("Variable antes del bloque", musica)
+        
+        const pi = 3.1416
+        console.log(pi)
+        
+        console.log (h);
+        console.log (h2);
+         //OBJETO
+         const persona = {
+            nombre: "Cris",
+            rut: 17219259
+        }
+        persona.edad = 36
+        console.log(persona)
+
+        console.log (persona)
+
+        let nombre ="Cris"
+        let frase ="El día estaba demasiado helado"
+        console.log(nombre.length)
+        console.log(nombre.toUpperCase())
+        console.log(frase.includes("El"))
+        console.log(frase.split(" "))
+
+
+        //arrray
+        const colores = ["blanco", "verde", "azul"]
+
+        //agrega un elemento al final del array
+        colores.push("amarillo")
+        console.log(colores)
+
+        //agrega un elemento al principio
+        colores.unshift("Rosa")
+
+        // quita un elemento del final
+        colores.pop()
+
+        //quita uno del principio
+        colores.shift()
+
+        //Funciones
+        function escribir(algo){
+            console.log(algo)
+        }
+        escribir(colores)
+
+        // la funciion square sirve para optener el radio
+        function square(num){
+            return num*num
+        }
+        
+        let radio=6
+
+        let areaCirculo = pi * square(radio);
+        console.log(areaCirculo)
+
+
+        //error aca
+        function saludar(n="Desconosido", e="0"){
+            console.log("hola soy "+ n + " y tengo " + e + " años")
+        }
+        saludar("Pedrito",7)
+
+        //Ejemplos de true
+        console.log(7 == 7 )
+        console.log("7" == 7)
+        console.log(0 == false)
+
+        //ejemplps de false
+        console.log("7" === 7)
+        console.log(0 === false)
+
+
+        //incremento de 1
+        let i = 2
+        console.log(i) //2
+
+        //imprimir y luego suna
+        console.log(i++) //2
+
+        //suma y luego imprime
+        console.log(++i)
+
+        //! negacion
+        console.log(!true)
+        
+        // || or
+        console.log((9===9) || ("9" ===9))
+
+        //&& and
+        console.log(("9" === 9) && (9 === 9))
+
+
+
+
+
+       
+
+
+    </script>
+</body>
+</html>

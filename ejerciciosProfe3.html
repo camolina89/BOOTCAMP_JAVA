@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            
+    //4
+       function miFuncion4 (texto, numero){
+           let multitexto = ""
+           for (let i = 0; i < numero; i++) {
+               multitexto += `${texto} `;
+           }
+           console.log(multitexto)
+       }
+       miFuncion4('Hola Mundo', '3') 
+
+//Suma de un arreglo
+
+            let listaUno = [1,2,3,4,5]
+        
+            function suma(list) {
+                let sum = 0;
+                for (const num in list){
+                    sum= sum+list[num]
+                }
+                return sum 
+            }
+            
+            console.log(suma(listaUno))
+
+//El mayor de un arreglo
+
+            function mayorDe(list) {
+                let mayor;
+                for (const num of list) {
+                    if (mayor == undefined){
+                        mayor=num
+                    }
+                    if(num>=mayor){
+                        mayor=num
+                    }
+                }
+                return mayor
+            }
+            console.log(mayorDe([-1,-2,-3,-4,-5]))
+
+//Comienza con la palabra java
+
+            function tieneJava(palabra) {
+                let paraComparar = palabra.toLowerCase().slice(0,4)
+                if ("java" === paraComparar){
+                    return true
+                }else{
+                    return false
+                }
+            }
+
+            console.log(tieneJava("JaVascript"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Tareas
+
+    <script>
+        // 1 .- Escribir un programa que almacene la cadena ¡Hola Mundo! en una variable y luego muestre por en consola.
+        var h = "¡hola Mundo!"
+        console.log(h)
+        
+        // 2 .- Definir un número de horas trabajadas y definir el coste por hora. Después debe mostrar en consola la paga que le corresponde
+        var horas = 5
+        var pago = 1000
+
+        console.log("Total de horas a pagar "+ horas * pago)
+
+        // 3 .- Definir PI = 3.14159, calcular el area de un circulo de un radio de 56cm, mostrar resultado en consola.
+        const pi = 3.14159
+        var area = pi * 56 * 56
+        console.log(area)
+
+
+        // 4 .- Construir un objeto auto, con 4 ruedas y de marca ford, posteriormente agregarle un color a elección, mostrar el objeto en consola.
+        const auto = {
+            ruedas: 4,
+            marca:"ford"
+        }
+        
+        auto.color = "blanco"
+        console.log(auto)
+
+
+        // 5 .- Construir un array que contenga 4 deportes, posteriormente agregar un quinto deporte, mostrar el array completo en consola.
+        const deportes = ["Futbol", "Jockey", "Tenis", "Basquetball"]
+        deportes.push("Voleibol")
+        console.log(deportes)
+        
+        //6 Poner su nombre y su apellido en dos variables y escribir como ejemplo "Nombre Apellido están aprendiendo Javascript" mostrarlas en consola usando la manera concatenada y con Template Strings.
+        let name = "Cristóbal Aurelio"
+        let lastName = "Molina Allende"
+
+        let frase = name + " " + lastName + " esta aprendiendo JS"
+        
+        console.log(frase)
+        
+
+        //7 Mostrar en consola la cantidad de caracteres que tiene la frase anterior.
+        console.log(frase.length)
+
+        //8 Mostrar en consola la frase anterior del primer ejercicio, en Mayusculas.
+        console.log(frase.toUpperCase())
+
+        //1) Programa una función que cuente el número de caracteres de una cadena de texto, ejemplo: miFuncion("Hola Mundo") devolverá 10.
+        
+        function contarCaracteres(txt){
+                console.log(txt.length)
+        }
+        contarCaracteres("hola Mundo")
+
+
+
+        //2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, ejemplo: miFuncion("Hola Mundo", 4) devolverá "Hola".
+
+      function recortar (texto){
+        console.log(texto.slice(0,4))
+      }
+      recortar("hola mundo")
+
+        //3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, ejemplo: miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+
+        function devolverArrray(dato){
+                console.log(dato.split(" "))
+        }
+
+        devolverArrray("hola que tal")
+
+        
+        
+
+    </script>
+</body>
+</html>

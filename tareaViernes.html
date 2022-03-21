@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tareas Viernes</h1>
+    <script>
+        //4) Programa una función que repita un texto X veces,
+        // ejemplo: miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+        function repite(texto, veces){
+        for(let i = 0; i < veces; i++){
+            console.log(texto +i)
+        }
+        }
+        repite ("wena", 4)
+
+        //5) Programa una función que dado un Array de numeros, devuelva la suma de esos numeros,
+        // ejemplo: miFuncion([1,2,3,4,5]) devolverá 15.
+        function suma(num){
+            console.log(num[0]+num[1]+num[2]+num[3]+num[4])
+        }
+
+        const array = [1,2,3,4,5]
+        suma (array)
+
+        //6) Programa una función que dado un Array de numeros, devuelva el mayor de esos numeros,
+        // ejemplo: miFuncion([1,2,3,4,5]) devolverá 5.
+        function mayor(num){
+            if (num[0] > num[1] && num[0] > num[2] && num[0] > num[3] && num[0] > num[4]  ) {
+                console.log("El primer numero es mayor, numero: " + num[0])
+            } else if(num[1] > num[0] && num[1] > num[2] && num[1] > num[3] && num[1] > num[4]){
+                console.log("El segundo numero es mayor, numero:  " + num[1])
+            } else if(num[2] > num[0] && num[2] > num[1] && num[2] > num[3] && num[2] > num[4]){
+                console.log("El Tercer numero es mayor, numero:  " + num[2])
+            } else if(num[3] > num[0] && num[3] > num[1] && num[3] > num[2] && num[3] > num[4]){
+                console.log("El Cuarto numero es mayor, numero:  " + num[3])
+            } else {
+                console.log("El Quinto numero es mayor, numero:  " + num[4])
+            }
+        }
+
+        const numeros = [1,2,3,4,5]
+        mayor (numeros)
+
+        //7) Programa una funcion que revise si un texto comienza con la palabra 'java', ya sea mayuscula o minuscula y devuelva un boolean,
+        // ejemplo miFuncion("JaVascRiPT") devolverá true
+
+        function revisar(txt){
+            txt = txt.toUpperCase()
+            console.log(txt.includes("JAVA"))
+        }
+        revisar("JaVascRiPT")
+
+    </script>
+</body>
+</html>

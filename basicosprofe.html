@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Básicos de javascript</h2>
+    <script>
+
+        //Entendiendo las variables
+
+        var hola = "Hola mundo"
+        let holaDos = "Hello World"
+
+        let musica = "Rock"
+        console.log("Variable antes del bloque", musica)
+        {
+            let musica = "Pop"
+            console.log("Variable dentro del bloque", musica)
+        }
+        console.log(window)
+        console.log("Variable despues del bloque", musica)
+        console.log(hola);
+        console.log(holaDos);
+        
+        //Esto es una constante, no se puede modificar
+        const PI = 3.1416
+        console.log(PI)
+        
+        //Array (una lista)
+        const colores = ["blanco", "negro", "azul"]
+
+        colores.push("verde")
+        console.log(colores)
+        console.log(colores.length)
+
+        //Objeto
+        const persona = {
+            nombre:"Luis",
+            rut:"11.111.111-1",
+        }
+
+        persona.edad = 36
+        console.log(persona)
+
+        //Esto es un boolean
+        let verdadero = true;
+        console.log(verdadero)
+
+        let nombre = "Luis"
+        let apellido = "Ramirez"
+        let frase = "El dia estaba frio en la mañana"
+        console.log(nombre.length)
+        console.log(nombre.toUpperCase())
+        console.log(nombre.slice(0,2))
+        console.log(frase.includes("El"))
+        console.log(frase.split(" "))
+
+        //Concatenar texto
+        let saludo = "Mi nombre es " + nombre +" "+apellido+ "."
+
+        //Otra manera de concatenar, Template Strings
+        let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`
+
+        console.log(saludo)
+        console.log(saludo2)
+
+        //Declarando Variables numericas
+        let a = 2.7
+        let b = 5.4
+
+        let c = "3.98"
+        
+        console.log(a,b)
+        
+        //Transformar a numero entero
+        let cNum = (parseInt(c))
+
+        //Transformar a numero con decimales
+        let cNumf = (parseFloat(c))
+
+        console.log(cNumf)
+        let d=(a+cNum)
+        console.log(d)
+        
+        //Aproximar
+        console.log(Math.round(b))
+
+        //Numero entero menor
+        console.log(Math.floor(a))
+        console.log(typeof d)
+
+
+        //Boolean
+        let ve = true
+        let fa = false
+
+        console.log(typeof ve)
+
+        //Es falso
+        console.log(Boolean(0))
+        console.log(Boolean(""))
+
+        //Es true
+        console.log(Boolean(-1))
+        console.log(Boolean(" "))
+
+        // Variable undefined
+        let indefinida;
+        console.log(indefinida)
+
+        // Variable nula
+        let nulo = null;
+        console.log(nulo)
+
+        // NaN - Not a Number
+        let noNumero = parseInt("suiadgi876")
+        console.log(noNumero)
+
+
+
+        //ARRAYS
+
+        const arrayVacia = []
+        console.log(arrayVacia)
+
+        const arrayConObjetos = [1, true, "hola",["a","b","c"]]
+        console.log(arrayConObjetos)
+        console.log(arrayConObjetos[3][2])
+
+        const color = ["Azul", "Rojo"]
+
+        //Agregar uno al final
+        color.push("Blanco")
+
+        //Agregar uno al Principio
+        color.unshift("Negro")
+
+        //Quitar uno al final
+        color.pop()
+
+        //Quitar uno del principio
+        color.shift()
+
+        console.log(color)
+
+        //Funciones
+
+        
+        function escribir(algo){
+            console.log(algo)
+        }
+        escribir(color)
+        
+        function square(num){
+            return num*num
+        }
+        
+        let radio = 6
+        
+        let areaCirculo = PI*square(radio);
+        console.log(areaCirculo)
+        
+        function saludar(nombre="Desconocido", edad="0"){
+            console.log("Hola soy "+ nombre + " y tengo "+ edad + " años.")
+            console.log(`Hola soy ${nombre} y tengo ${edad} años.` )
+        }
+
+        saludar("Pedrito",7)
+        saludar()
+
+
+        // Ejemplos de True
+        console.log(7 == 7)
+        console.log("7" == 7)
+        console.log(0 == false)
+
+        // Ejemplos de Falso
+        console.log("7" === 7)
+        console.log(0 === false)
+
+        //Incremento de 1
+
+        let i = 2;
+
+
+        console.log(i) //2
+
+        //Imprime y luego suma
+        console.log(i++) //2
+        
+        //Suma y luego imprime
+        console.log(++i)
+
+        // ! (Not)
+        console.log(!true)
+
+        //  || (or)
+        console.log((9===9) || ("9"===9)) 
+
+        // && (and)
+        console.log((9===9) && ("9"===9)) 
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

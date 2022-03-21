@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Básicos de javascript</h2>
+    <script>
+
+        //Entendiendo las variables
+
+        var hola = "Hola mundo"
+        let holaDos = "Hello World"
+
+        let musica = "Rock"
+        console.log("Variable antes del bloque", musica)
+        {
+            let musica = "Pop"
+            console.log("Variable dentro del bloque", musica)
+        }
+        console.log(window)
+        console.log("Variable despues del bloque", musica)
+        console.log(hola);
+        console.log(holaDos);
+
+        //Esto es una constante, no se puede modificar
+        const PI = 3.1416
+        console.log(PI)
+        
+        //Array (una lista)
+        const colores = ["blanco", "negro", "azul"]
+
+        colores.push("verde")
+        console.log(colores)
+        console.log(colores.length)
+
+        //Objeto
+        const persona = {
+            nombre:"Luis",
+            rut:"11.111.111-1"
+        }
+
+        persona.edad = 36
+        console.log(persona)
+
+        //Esto es un boolean
+        let verdadero = true;
+        console.log(verdadero)
+
+        let nombre = "Luis"
+        let frase = "El dia estaba frio en la mañana"
+        console.log(nombre.length)
+        console.log(nombre.toUpperCase())
+        console.log(nombre.slice(0,2))
+        console.log(frase.includes("El"))
+        console.log(frase.split(" "))
+
+        //Concatenar texto
+        let saludo = "Mi nombre es " + nombre + "."
+
+        //Otra manera de concatenar, Template Strings
+        let saludo2 = `Hola mi nombre es ${nombre}`
+
+        console.log(saludo)
+        console.log(saludo2)
+
+        // condicionales  if - else
+
+        let edad = 17
+
+        if (edad >= 18) {
+            console.log("Mayor de edad")
+        }else{
+            console.log("Menor de edad")
+        }
+
+        let hora = 20
+        if (hora >= 0 && hora <= 5){
+            console.log("a esa hora duermo")
+        }else if(hora >= 6 && hora <= 12){
+                console.log("Ya desperte")
+        } else if(hora >= 13 && hora <= 18){
+                console.log("Ya almorce")
+        }else{
+            console.log("estoy en clases")
+        }
+
+        //ciclos while, do while, for
+        let contador = 0
+        while(contador < 10){
+            console.log("while "+ contador)
+            //contador +=2
+            contador = contador +2
+        }
+
+        do{
+            console.log("do-while "+ contador)
+            //contador +=2
+            contador = contador +2
+        }while(contador<10)
+
+        for(let i = 0; i < 10; i++){
+            console.log("for " + i)
+        }
+
+        const lista = ["a","b","c","d","e"]
+
+        //for in
+        for(indice in  lista){
+            console.log(lista[indice])
+        }
+
+        //for of
+        for(letras of lista){
+            console.log(letras)
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
