@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+        <h1>Formulario de Registro</h1><br>
+        <form action="registro">
+        Nombre: <input type="text" name="name" id="name">  <br>
+        Apellido: <input type="text" name="lastName" id="lastName"><br>
+        Email: <input type="email" name="email" id="email"> <br>
+        Contraseña: <input type="password" name="password" id="password"> <br>
+        Confirmar: <input type="password" name="password2" id="password2"> <br>
+        Cumpleaños: <input type="date" name="birthDay" id="birthDay"> <br>
+        
+        <input type="radio" name="sex" id="h">
+        <label for="h">Hombre</label>
+        
+        <input type="radio" name="sex" id="m">
+        <label for="m">Mujer</label>
+
+        <input type="radio" name="sex" id="o">
+        <label for="o">Otro</label> <br>
+
+        Una breve descripción de ti: <br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea> <br>
+
+        <label > Lenguaje Favorito</label>
+        <select name="lenguaje" id="lenguaje">
+            <option value="1">JavaScript</option>
+            <option value="2">Java</option>
+            <option value="3">PHP</option>
+            <option value="4">C++</option>
+            <option value="5">C#</option>
+            <option value="6">.NET</option>
+        </select> <br>
+        <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>
