@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="blogSanchez" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Alexis Sánchez</title>
+    <style>
+        table{
+            border: 3px black solid;
+            border-collapse: collapse;
+            }
+        th{
+            background-color: #cccccc;
+            }
+        tr:nth-child(odd) {
+            background-color: #eeeeee;
+            }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+            }
+        td, th{
+            border-left: 2px black solid;
+            padding-right: 20px;
+            }
+    </style>
+</head>
+<body>
+    
+    <h1>Alexis Sánchez</h1>
+    <img width="30%" height="30%" src="https://laopinion.com/wp-content/uploads/sites/3/2016/06/gettyimages-543249118-e1467065345840.jpg?quality=80&strip=all&w=960" alt="Niño Maravilla">
+    <div style="width: 30%;">
+    <p>Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Equipo</th>
+                <th>Año</th>
+                <th>Goles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cobreloa</td>
+                <td>2005 - 2006</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Colo-Colo</td>
+                <td>2006 - 2007</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>River Plate</td>
+                <td>2007 - 2008</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Udinese</td>
+                <td>2008 - 2011</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>2011 - 2014</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>Arsenal</td>
+                <td>2014 - 2018</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Manchester United</td>
+                <td>2018 - 2019</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Inter de Milan</td>
+                <td>2019 - 2022</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>2005 - 2007 Chile</li>
+        <li>2007 - 2008 Argentina</li>
+        <li>2008 - 2011 Italia</li>
+        <li>2011 - 2014 España</li>
+        <li>2014 - 2019 Inglaterra</li>
+        <li>2019 - 2020 Italia</li>
+    </ul>
+    <a href="https://www.youtube.com/watch?v=WVpThm0iI14" target="_blank" rel="noopener noreferrer">Haz click acá para ver todos los goles de Alexis en el Arsenal</a>
+    <form action="enviar_servidor">
+        <h2>Por favor, contesta esta breve encuesta</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <input type="radio" name="consulta" id="consulta1">
+        <label for="consulta1">Si, por favor, enviame montones de correos</label><br>
+        <input type="radio" name="consulta" id="consulta2">
+        <label for="consulta2">No, por favor, no me mandes correos</label>
+        <h3>¿Cómo supieste de nosotros</h3>
+        <input type="checkbox" name="opcion1" id="facebook">
+        <label for="facebok">Facebook</label><br>
+        <input type="checkbox" name="opcion2" id="periodico">
+        <label for="periodico">En el periódico</label><br>
+        <input type="checkbox" name="opcion3" id="contacto">
+        <label for="contacto">Por un contacto</label><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
