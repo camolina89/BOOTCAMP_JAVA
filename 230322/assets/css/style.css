@@ -1,0 +1,55 @@
+
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: blue;
+    border-bottom: 4px solid rgb(12, 56, 201);
+}
+h1 span{
+    font-weight: bold;
+    color: rgb(255, 8, 0);
+    border: 2px solid red;
+}
+p{
+    background-color: chocolate;
+    font-size: medium;
+    border-radius: 10px;   
+    padding-left: 20%;
+    padding-right: 20%;
+    border: 5px solid black;
+    
+    
+}
+.important{
+        width: 180px;
+        margin:10px;
+        padding:30px;
+        font-size: 14px;
+        background: #eee;
+        display: inline-block;
+
+}
+.info{
+	background-color: green;
+	border:1px solid black;
+    background: #ffffff url("../img/more-languages3.png") no-repeat fixed center;
+}
+body{
+    background: #ffffff url("../img/foto.jpg") no-repeat fixed center;
+}
+
+#parrafo {
+    overflow: scroll;
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+
+  }
+  #nav-menu{
+    list-style-type: none; /*This gets rid of the bullets.*/
+    background-color: beige;
+  }
+  #nav-menu li {
+    display: inline;
+  }

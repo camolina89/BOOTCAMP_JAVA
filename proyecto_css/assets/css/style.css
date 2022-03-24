@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    background-color: khaki;
+    background-color: aqua;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    
+
+}
+
+h1{
+    background-color: aqua;
+}
+h2{
+    background-color: brown;
+    margin-top: 20px;
+}
+
+#id1{
+    color: red;
+}
+#id2{
+    color: white;
+}
+#id3{
+    color: blue;
+}
+
+.color1{
+    color:palevioletred
+}
+
+.parrafo-uno{
+    font-weight:900;
+    font-style:italic;
+    font-size: 26px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+}
+
+.fondo-blanco{
+    background-color: #ffffff;
+}
+
+.fondo-blanco p{
+    background-image: url(/assets/img/imagen_ejemplo.jpg);
+}
+
+#parrafo-unico{
+    color: red;
+}
+
+.div-caja{
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    border: 16px red solid;
+    border-radius: 20px;
+    padding: 80px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.color-bloque{
+    background-color: blueviolet;
+    display: inline-block;
+}
+
+/* a {
+    margin: 10px;
+    background: #eee;
+    color: black;
+    padding: 10px;
+    display: block;
+  } */
+
+.letra-roja{
+    color: red;
+}
+/*Esto es un comentario para el CSS */
+.caja-tamanio{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.contenedor{
+    background-color: crimson;
+    width: 50vw;
+}
+h1{
+    background-color: blue;
+}
+
+#nav-menu{
+    list-style-type: none; /*This gets rid of the bullets.*/
+    
+  }
+
+#nav-menu li{
+    display: inline;
+}
+
+
+
+ul{
+    margin: 100px;
+}
+
+.bloque-linea {
+    width: 180px;
+    margin:10px;
+    font-size: 14px;
+    background: #eee;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
