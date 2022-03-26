@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 950px;
+    max-width: 90%;
+    background-color: silver;
+    margin: 0px auto;
+    /* 1.- Primero veo que todos en comun tienen esta separacion en general del borde*/
+    padding: 20px;
+}
+
+#header {
+    min-height: 150px;
+    background-color: green;
+    /* 2.- El azul y el rojo comparten esta separacion */
+    margin-bottom: 20px;
+}
+
+#navigation {
+    min-height: 300px;
+    /* width: 150px; */
+    width: 20%;
+    background-color: blue;
+    /*3 El azul amarillo y rojo se comportan como inline-block */
+    display: inline-block;
+}
+
+#main_content {
+    min-height: 400px;
+    /* width: 700px; */
+    width: calc(80% - 25px);
+    background-color: red;
+    /* Paso 3 */
+    display: inline-block;
+    /* 4 .- Que el rojo quede alineado hacia arriba junto al bloque azul */
+    vertical-align: top;
+    /* 5 Corregir el padding y margen superior e izquerdo */
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-left: 20px;
+    /*6.- Agregar un extra padding para completar hasta el borde*/
+    padding-right: 10px;
+
+}
+
+.subcontents {
+    min-height: 200px;
+    /* width: 210px; */
+    width: 30%;
+    background-color: yellow;
+    /* Paso 3 */
+    display: inline-block;
+    /*7 Separar los cuadrados amarillos entre si*/
+    margin-right: 10px;
+    /*8 Separar los cuadrados amarillos del morado*/
+    margin-bottom: 20px;
+
+}
+
+#advertisement {
+    min-height: 120px;
+    /* width: 660px; */
+    width: 90%;
+    background-color: purple;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #navigation {
+        display: none;
+    }
+    #main_content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .subcontents {
+        width: calc(50% - 12px);
+    }
+    #advertisement{
+        width: calc(100% - 5px);
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .subcontents{
+        width: calc(100% - 5px);
+    }
+}
