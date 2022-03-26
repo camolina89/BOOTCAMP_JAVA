@@ -46,4 +46,12 @@
     margin-left: 10px;
    }
    
+   @media (max-width: 1024px){
+       #navigation{
+           display: none;
+       }
+   }
    
+   @media (max-width: 480px){
+       
+   }
