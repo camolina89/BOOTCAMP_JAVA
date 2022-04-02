@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>uno</li>
+      <li>dos</li>
+      <li>tres</li>
+      <li>cuatro</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates
+      saepe esse commodi tenetur minus ut autem quibusdam necessitatibus, odio
+      et? Possimus nesciunt repudiandae maiores velit incidunt ratione
+      accusantium aut.
+    </p>
+
+    <p id="parrafomod">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, facilis.
+      Sunt tempora excepturi similique eveniet, rem molestias consequatur
+      delectus ea sint rerum, maxime dolorum. Aliquid asperiores reprehenderit
+      rem voluptate aliquam.
+    </p>
+
+    <button id="btnAlert"> Boton para alertar</button>
+
+    <script>
+        let liDos  = document.getElementsByTagName("li")[1]
+        liDos.innerHTML = "modificado 2"
+
+        function cambiarParrafo(){
+        document.getElementById("parrafomod").style.setProperty("background-color", "red");
+        }
+
+        function vuelveParrafo(){
+        document.getElementById("parrafomod").style.setProperty("background-color", "white");
+        }
+
+
+        liDos.addEventListener("mouseenter", cambiarParrafo)
+        liDos.addEventListener("mouseleave", vuelveParrafo)
+        
+        let btnAlert = document.getElementById("btnAlert")
+        function alertar(){
+            alert("haz presionado el Boton de Alerta!!")
+        }
+        
+       document.addEventListener("click", alertar)
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Los 13 Algoritmos</h1>
+
+    <script>
+        //1 
+
+        function numeros(){
+            for (let i = 1; i <= 255; i++) {                                
+               console.log(i)
+            }
+        }                       
+        numeros()
+
+
+        //2
+        function pares(){
+            for (let i = 1; i <= 1000; i++) {
+                if (i%2 == 0 ) {
+                    console.log(i)
+                }
+                
+            }
+        }
+        pares()
+
+        //3 
+        function sumImpares(){
+            let suma = 0;
+            for (let i = 1; i <= 5000; i++) {                                
+                if (i%2 != 0) {                
+                    suma += i
+                }
+                
+            }
+            console.log(suma) 
+        }
+        sumImpares()
+
+        //4
+        function sumaArray(array){
+            let sumaArray = 0;
+            for (let i = 0; i < array.length; i++) {
+                sumaArray += array[i]                
+            }
+            console.log(sumaArray)
+        }
+        sumaArray([-5, 2, 5, 12])
+
+        //5
+        
+
+
+
+    </script>
+
+
+
+</body>
+</html>
