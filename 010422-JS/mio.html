@@ -7,59 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-        <select name="especialidades" id="especialidades" onchange="functionLlamar()">
-            <option value="">Seleccione Especialidad</option>
-            <option value="Dental">Dental</option>
-            <option value="Radiologia">Radiologia</option>
-            <option value="Traumatologia">Traumatologia</option>
-        </select>
-        <div id="espe" style="margin-top: 15px; width: 850px; height: 600px; font-family: Arial, Helvetica, sans-serif; line-height: 18px;" >
-
-
-        </div>
-    <script>
-        //Datos del txt
-        function functionLlamar(){
-            
-
-            var value = document.getElementById("especialidades").value;            
-            divv = document.getElementById("espe");
-           
-            divv.innerHTML= "Horas Especialidad "+ value;
-            divv.innerHTML= divv.innerHTML +"<hr>";
-            
-            if (value = "Dental") {
-
-                miFuncion(dental)
-                
-            }else if (value = "Traumatologia"){
-                miFuncion(traumatologia)
-            }else{
-                miFuncion(radiologia)
-            }
-        }
-
-
-        function miFuncion(ArrayDeObjetos) {
-            divv = document.getElementById("espe");           
-            for (let i = 0; i < ArrayDeObjetos.length; i++) {
-                if (i == 0 || i == ArrayDeObjetos.length-1){
-                
-                let h = ArrayDeObjetos[i];                
-                console.log(h)
-                console.log("El cliente "+ ArrayDeObjetos[i].paciente +" de rut"+   +" se atenderá a las ---- con (especialista) ");
-                divv.innerHTML= divv.innerHTML + "El cliente "+ h.paciente +" de rut "+ h.rut   +" se atenderá a las "+ h.hora  +" con "+ h.especialista +"<br>";
-            }
-            }
-
-        }
-
-       
-
-    //El cliente ------ de rut ------ se atenderá a las ---- con (especialista).
+    <div><h1>Horas especialidades</h1></div>
     
+    <div style="margin-bottom: 15px;"><label for="especialidad"></label>
+    <select name="especialidad" id="especialidad" onchange="select()">
+        <option value="nada">Seleccione</option>
+        <option value="dental">Dental</option>
+        <option value="traumatologia">Traumatologia</option>
+        <option value="radiologia">Radiologia</option>
+        <option value="General">General</option>
+    </select>
+    </div>
+    <div id="datos">
 
-        let radiologia = [{hora:"11:00",especialista:"IGNACIO SCHULZ",paciente:"FRANCISCA ROJAS",rut:"9878782-1",prevision:"FONASA"},
+    </div>
+
+    <script>
+// El cliente ------ de rut ------ se atenderá a las ---- con (especialista).
+function select(){       
+var valor = document.getElementById("especialidad").value;
+var datosDiv = document.getElementById("datos");
+
+switch (valor) {
+    case "dental":
+         miFuncion(dental);
+        break;
+    case "traumatologia":
+         miFuncion(traumatologia);
+        break;
+    case "radiologia":
+        miFuncion(radiologia);
+        break;
+    default:
+        datosDiv.innerHTML="Sin datos";
+        break;
+}
+
+}
+
+let radiologia = [{hora:"11:00",especialista:"IGNACIO SCHULZ",paciente:"FRANCISCA ROJAS",rut:"9878782-1",prevision:"FONASA"},
             {hora:"11:30",especialista:"FEDERICO SUBERCASEAUX",paciente:"PAMELA ESTRADA",rut:"15345241-3",prevision:"ISAPRE"},
             {hora:"15:00",especialista:"FERNANDO WURTHZ",paciente:"ARMANDO LUNA",rut:"16445345-9",prevision:"ISAPRE"},
             {hora:"15:30",especialista:"ANA MARIA GODOY",paciente:"MANUEL GODOY",rut:"17666419-0",prevision:"FONASA"},
@@ -82,17 +68,27 @@
             {hora:"14:00",especialista:"RAQUEL VILLASECA",paciente:"ANA SEPULVEDA",rut:"14441281-0",prevision:"ISAPRE"}
         ];
 
-        // document.write("Horas Dentales");
-        // document.write("<hr>");
-        // miFuncion(dental);
 
-        // document.write("Horas Traumatologia");
-        // document.write("<hr>");
-        // miFuncion(traumatologia);
 
-        // document.write("Horas Radiologia");
-        // document.write("<hr>");
-        // miFuncion(radiologia);
+        //Datos del txt
+
+        function miFuncion(ArrayDeObjetos) {
+            for (let i = 0; i < ArrayDeObjetos.length; i++) {
+                if (i == 0 || i == ArrayDeObjetos.length-1){                                                               
+                document.write("<div> El cliente "+ ArrayDeObjetos[i].paciente +" de rut "+ ArrayDeObjetos[i].rut   +" se atenderá a las "+ ArrayDeObjetos[i].hora  +" con "+ ArrayDeObjetos[i].especialista +"</div><br> ");
+            }
+            }
+        }
+
+        
+
+
+
+
+
+        
+       
+        
 
     </script>
 </body>
