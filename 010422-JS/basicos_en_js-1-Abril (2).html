@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+        Este es un
+        comentario de
+        muchas lineas.
+        */
+        // alert("Este es mi primera alerta")
+
+        //         //Este es un boolean
+        //         let verdad = true;
+        //         let mentira = false;
+
+        //         //Esto es un numero
+        //         let numero = 90;
+
+        //         //Esta variable no esta definida
+        //         let no_definida;
+
+        //         //Variable null
+        //         let nulo = null
+
+        //         console.log(nulo)
+
+        //         // Strings
+        //         let palabras = "Estas son palabras"
+
+
+        //         var dato1 = "5";
+        //         var dato2 = "4";
+        //         dato1 = parseInt(dato1);
+        //         dato2 = parseInt(dato2);
+
+        //         // alert(dato1+dato2)
+
+        //         //Algoritmo Suma de dos numeros
+        //         //let n1 = prompt("Ingrese un primer numero: ")
+
+        //         //n1 = parseInt(n1);
+
+        //         //let n2 = prompt("Ingrese un segundo numero: ")
+        //         //n2 = parseInt(n2);
+
+        //         //let suma = n1 + n2;
+        //         // alert(suma)
+        //         //document.write("<h1>La suma de los numeros "+ n1 +" y "+n2+" es: "+ suma+"</h1>")
+        //         //document.write(`<h1> La suma de los numeros ${n1} y ${n2} es ${suma}</h1>`)
+        //         //Fin algoritmo
+
+
+
+        //         let resto = 16%6;
+        //         console.log(resto)
+
+        //         let numUno = 20;
+        //         let numDos = 2;
+        //         let numCinco = 5;
+        //         let numSiete = 7;
+
+        //         numUno = numUno *2;
+        //         numUno *=2;
+        //         console.log(numUno)
+
+        //         let division = 1.9;
+        //         console.log(Math.floor(division))
+
+
+        //         numDos++;
+        //         console.log(numDos)
+
+        //         let sonIguales = numDos === numCinco;
+        //         let comparar = numCinco < numSiete;
+        //         // console.log(sonIguales)
+        //         //console.log(comparar)
+
+        //         //&& (y)
+        //         // console.log((9==9)&&(9==8))
+
+        //         //|| (or)
+        //         console.log((9==9)||(9==8))
+
+        //         // ! negacion
+        //         console.log(!true)
+
+        //     let edad = "fd";
+
+        //     if (edad >=18) {
+        //         console.log("Es mayor de edad")
+        //     }else if(edad > 0){
+        //         console.log("Es menor de edad")
+        //     }else{
+        //         console.log("Es una edad no valida")
+        //     }
+
+        //     let mes = 4;
+
+        //     switch (mes) {
+        //         case 1:
+        //             console.log("Enero")
+        //             break;
+        //         case 2:
+        //             console.log("Febrero")
+        //             break;
+        //         case 3:
+        //             console.log("Marzo")
+        //             break;
+        //         default:
+        //             console.log("No se que mes es")
+        //             break;
+        //     }
+
+        // // for(let i=5; i < 10;i++){
+        // //     console.log(`for desde 5 ${i}`)
+        // // }
+
+
+        //     for (let i = 0; i < 10; i++) {
+        //         console.log(`for ${i}`)
+        //     }
+
+        //     let contador = 1;
+        //     while(contador <10){
+        //         console.log(`while ${contador}`)
+        //         contador +=2
+        //     }
+
+
+        //     let contadorDos = 9
+        //     do{
+        //         console.log(contadorDos)
+        //     }while(contadorDos == 11);
+
+
+        //     function elevadoA(num, eleva) {
+        //         return Math.pow(num,eleva)
+        //     }
+
+        //     function saludar(nombre, edad) {
+        //         document.write(`<p>Hola yo soy ${nombre} y mi edad es de ${edad} años.</p>`)
+        //     }
+
+        //     // let elNombre = prompt("Diga su nombre: ")
+        //     // let laEdad = prompt("Diga su edad: ")
+        //     let elNombre = "Pedrito"
+        //     let laEdad = 17;
+
+        //     saludar(elNombre, laEdad)
+
+
+        //     function saludoRetorno(nombre, edad) {
+        //         let fraseDeSaludo = `Mi nombre es ${nombre} y tengo ${edad} años.`
+        //         return fraseDeSaludo
+        //     }
+
+        //     let fraseRetornada = saludoRetorno(elNombre,laEdad).toUpperCase()
+
+        //     document.write(fraseRetornada)
+
+        //     function sumaTres(n1,n2,n3){
+        //         let sumaTodo = elevadoA(n1,3)+elevadoA(n2,3)+elevadoA(n3,4)
+        //         return sumaTodo;
+        //     }
+
+        //     document.write(`<hr> ${sumaTres(10,20,30)}`)
+
+        //     const NUMERO_NUEVE = 9;
+
+        // const miLista = ["Lunes","Martes","Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+        // console.log(miLista[4])
+
+        const miMatriz = [[34, 45, 67], ["aba", 'bcb', 'jaj'], [99, 88, 77]]
+        // miMatriz[1][2] = 'lol';
+        // console.log(miMatriz[2][2])
+        // console.log(miMatriz)
+        // console.log(miLista)
+
+        // let numeros = [12,23,34,44,53,65,72,86,93]
+
+
+        // for (let i = 0; i < numeros.length; i++) {
+        //     const element = numeros[i];
+        //     console.log(element)
+        // }
+
+        // for (const i in numeros) {
+        //     const element = numeros[i];
+        //     console.log(element)
+        // }
+
+        // for (const num of numeros) {
+        //     console.log(num)
+        // }
+
+
+        // let colores = ['Rojo', 'Verde', 'Azul']
+
+        // //Agrega al final del Array
+        // colores.push("Negro")
+
+        // //Quita uno del final
+        // colores.pop()
+
+        // //Agrega uno al principio
+        // colores.unshift("Blanco")
+
+        // //Quita uno del principio
+        // colores.shift()
+
+        // console.log(colores)
+
+
+        // function maxMinProm(arreglo) {
+        //     let sum = 0
+        //     let largo = arreglo.length
+        //     let max = arreglo[0]
+        //     let min = arreglo[0]
+
+        //     for (let i=0; i<largo; i++) {
+        //         sum = sum + arreglo[i]
+
+        //         if(arreglo[i]> max){
+        //             max = arreglo[i]
+        //         }
+
+        //         if(arreglo[i]< min){
+        //             min = arreglo[i]
+        //         }
+        //     }
+
+        //     let nuevoArr = [];
+        //     nuevoArr.push(max)
+        //     nuevoArr.push(min)
+        //     nuevoArr.push(sum/largo)
+
+        //     return nuevoArr
+        // }
+
+        // let miArray = [-20,341,5,10,-2];
+
+        // let resultado = maxMinProm(miArray)
+
+        // console.log(`Este es el mayor ${resultado[0]} este es el el menor ${resultado[1]} y este es el promedio ${resultado[2]} `)
+        // // maxMinProm(miArray)
+
+
+        // function unoAlDocientos(min, max) {
+        //     let arreglo = []
+        //     for (let i = min; i <= max ; i++) {
+        //         arreglo.push(i);
+        //     }
+        //     //console.log(arreglo)
+        //     return arreglo
+        // }
+
+        // let arrayResultado = unoAlDocientos(200, 255)
+        // console.log(arrayResultado)
+
+
+        // for(let i = 1; i <= 10; i++){
+        //     document.write("Tabla del "+i + "<br>")
+        //     for(let j = 1; j <= 10; j++){
+        //         document.write(`${i}x${j} = ${i*j}<br>`)
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // const arreglo = []
+
+        // for(let i = 0; i < 3; i++){
+        //     let arrInterno = []
+
+        //     for(let j = 0; j < 3; j++){
+        //         arrInterno.push(i)
+        //     }
+
+        //     arreglo.push(arrInterno)
+        // }
+
+        // console.log(arreglo)
+
+
+        // const automovil = {
+        //     marca: "Mazda",
+        //     modelo: "3 Sport",
+        //     pantente: "LJKH63",
+        //     color: "azul",
+        //     kilometraje: 15000,
+        //     usado: false,
+        //     encender: function () {
+        //         alert("Automovil encendido.")
+        //     }
+        // }
+
+        // automovil.pantente = "AAAA11"
+
+        // // console.log(automovil.pantente)
+        // // automovil.encender()
+
+        // const pedrito = {
+        //     nombre: "Pedro",
+        //     apellido: "Pedreros",
+        //     edad: 23,
+        //     pasatiempos: ["Juega Basketball", "Tocar Guitarra", "Aprender programación", "Comer Costillas"],
+        //     soltero: true,
+        //     contacto: {
+        //         email: "pedrito@gmail.com",
+        //         telefono: "+569 90876543"
+        //     },
+        //     saludar: function () {
+        //         console.log("Hola")
+        //     }
+        // }
+
+        // // console.log(pedrito.pasatiempos)
+        // pedrito.saludar()
+        // pedrito.direccion = "San Pedro 111"
+        // console.log(pedrito)
+
+
+        // const glazedDonuts = [
+        //     {
+        //         frosting: 'glazed',
+        //         style: 'cake',
+        //         type: 'old fashioned',
+        //         age: '45',
+        //         time: 'minutes'
+        //     },
+        //     {
+        //         frosting: 'glazed',
+        //         style: 'yeast raised',
+        //         type: 'regular',
+        //         age: '5',
+        //         time: 'minutes'
+        //     },
+        //     {
+        //         frosting: 'glazed',
+        //         style: 'yeast raised',
+        //         type: 'jelly filled',
+        //         age: '1',
+        //         time: 'seconds'
+        //     }
+        // ];
+
+        // var numPurchase = 0;
+        // for (var i in glazedDonuts) {
+        //     console.log(glazedDonuts[i].type);
+        //     if ((glazedDonuts[i].age < 25 && glazedDonuts[i].time == 'minutes') || glazedDonuts[i].time == 'seconds') {
+        //         numPurchase++;
+        //     }
+        //     else {
+        //         console.log('not this donut...');
+        //     }
+        // }
+        // console.log(numPurchase);
+
+
+    </script>
+
+
+
+
+    <!-- <script src="/assets/js/mi_script.js"></script> -->
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@
     <h1>Los 13 Algoritmos</h1>
 
     <script>
-        //1 
+        //1  Obtén del 1 al 255
 
         function numeros(){
             for (let i = 1; i <= 255; i++) {                                
@@ -20,7 +20,7 @@
         numeros()
 
 
-        //2
+        //2 Consigue pares hasta 1000
         function pares(){
             for (let i = 1; i <= 1000; i++) {
                 if (i%2 == 0 ) {
@@ -31,7 +31,7 @@
         }
         pares()
 
-        //3 
+        //3  Suma impares hasta 5000
         function sumImpares(){
             let suma = 0;
             for (let i = 1; i <= 5000; i++) {                                
@@ -44,7 +44,7 @@
         }
         sumImpares()
 
-        //4
+        //4 Itera un array
         function sumaArray(array){
             let sumaArray = 0;
             for (let i = 0; i < array.length; i++) {
@@ -54,10 +54,126 @@
         }
         sumaArray([-5, 2, 5, 12])
 
-        //5
-        
+        //5 Encuentra el mayor (max)
+        function mayorDe(array) {
+                let mayor;
+                for (const num of array) {
+                    if (mayor == undefined){
+                        mayor=num
+                    }
+                    if(num>=mayor){
+                        mayor=num                        
+                    }
+                }
+                return mayor
+            }
+            console.log(mayorDe([-3,3,5,7]))
+
+        //6 Encuentra el promedio (avg)
+        function promedio(array){
+            let i = 0
+            let sumar = 0 
+            let largoArray = array.length
+            while (i < largoArray) {
+                sumar = sumar + array[i++]
+            }
+            return sumar / largoArray
+        }
+
+        console.log(promedio([1,3,5,7,20]))
+
+        // 7 Array de impares: 
+        function impares(){
+
+            var miArray = [];
+            for (var i = 0; i <= 50; i ++) {
+
+                if (i%2 != 0) {
+                    
+                    miArray.push(i);
+                }
+            }
+            return miArray            
+        }
+        console.log(impares())
 
 
+        // 8 Mayor que Y
+        function mayorY (y){
+            const arr = [1,3,5,7]
+            contar = 0
+            for (let i = 0; i < arr.length; i++) {
+                 
+                if (y < arr[i]) {
+                    contar = contar + 1
+                }                
+            }
+            return contar
+        }
+
+        console.log(mayorY(3))
+
+        //9 Cuadrados
+        function cuadrado(){
+            const arrCuadrado =  [1,5,10,-2]
+            let alcuadrado = []
+            for (let i = 0; i < arrCuadrado.length; i++) {
+                alcuadrado.push(arrCuadrado[i]*arrCuadrado[i])                  
+            }
+            return alcuadrado
+        }
+        console.log(cuadrado ())
+
+        // 10 Negativos
+        function negativo(){
+            const arrNegative = [1,5,10,-2]            
+            for (let i = 0; i < arrNegative.length; i++) {
+                if (arrNegative[i] < 0) {
+                    arrNegative[i] = 0                   
+                }
+                
+            }
+            return arrNegative
+        }
+        console.log(negativo())
+
+        //11 Max/Min/Avg
+
+         function maxMinProm(arreglo) {
+             let sum = 0
+             let largo = arreglo.length
+            let max = arreglo[0]
+         let min = arreglo[0]
+
+            for (let i=0; i<largo; i++) {
+                 sum = sum + arreglo[i]
+
+                 if(arreglo[i]> max){
+                     max = arreglo[i]
+                 }
+
+                 if(arreglo[i]< min){
+               min = arreglo[i]
+                 }
+       }
+
+             let nuevoArr = [];
+             nuevoArr.push(max)
+             nuevoArr.push(min)
+             nuevoArr.push(sum/largo)
+
+             return nuevoArr
+         }
+
+         let miArray = [1,5,10,-2];
+
+         console.log(maxMinProm(miArray))
+
+
+         //12 Intercambia Valores
+
+
+         
 
     </script>
 
