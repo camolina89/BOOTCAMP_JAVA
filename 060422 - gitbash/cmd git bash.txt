@@ -1,0 +1,31 @@
+cd /
+cd D
+ls
+cd Users/
+ls
+cd Cristóbal/
+ls
+cd Desktop/
+ls
+mkdir test
+cd test/
+touch index.html
+touch style.css
+git init
+git add .
+git status
+git commit -m "iniciando el test"
+git status
+git add .
+git commit -m "se agrega titulo del html"
+git status
+git add .
+git log
+git add .
+git commit -m "Actualizacion de CSS"
+git log
+git revert -n fef7ea4
+git status
+git add .
+git commit -m "Actualizacion de CSS 2"
+git log
