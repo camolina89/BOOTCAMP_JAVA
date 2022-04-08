@@ -9,6 +9,68 @@
 <body>
     <h1>Fundamentos Básicos II</h1>
     <h2>14 Algoritmos</h2>
-    
+    <script>
+        //1 Tamaño Grande 
+        function numString(arrString){
+                        
+            for (let i = 0; i < arrString.length; i++) {
+                if (arrString[i] >= 0) {
+                    arrString[i] = ' big '                   
+                }
+                
+            }
+            return arrString
+        }
+        console.log(numString([-1,3,5,-5]))
+
+        // 2 Imprime (print) el menor, devuelve (return) el mayor
+        function minPrintMaxReturn(arreglo){
+            let min = arreglo[0]
+            let max = arreglo[0]
+             for (let i = 0; i < arreglo.length; i++) {
+                 if (arreglo[i] < min) {
+                     min = arreglo[i]
+                 }
+                 if (arreglo[i] > max) {
+                     max = arreglo[i]
+                 }        
+             }
+             console.log(min)
+             return max
+        }
+        console.log(minPrintMaxReturn([-1,8,5,0]))
+
+        //3 Imprime (print) uno, devuelve (return) otro-
+        function penultimoimpar(arre3){
+            let penultimo = arre3[arre3.length - 2]
+            let posicion = []
+            let primer = arre3[0]
+            for (let i = 0; i < arre3.length; i++) {
+                if (arre3[i]%2 != 0 ) {
+                    primer = arre3[i]
+                    posicion.push(arre3[i])
+                }
+            }
+            console.log(primer) 
+            return posicion[0]          
+        }
+        
+        console.log(penultimoimpar([2,4,3,-5,7,-1]))
+
+        //4 Doble Visión
+        function doble(arrdoble){
+            
+            for (let i = 0; i < arrdoble.length; i++) {
+                arrdoble[i] = arrdoble[i] * 2;
+            }
+            return arrdoble
+        }
+        console.log(doble([1,2,3]));
+
+        //5
+        
+
+
+    </script>
 </body>
 </html>
