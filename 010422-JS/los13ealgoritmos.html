@@ -172,7 +172,31 @@
 
          //12 Intercambia Valores
 
+         function intercambia (array){
+            arrayInicio = array          
+            ultimo1 = array[array.length -1]
+            primero1 = array[0]            
+            
+            arrayInicio[0] = ultimo1
+            arrayInicio[array.length -1] = primero1
 
+            console.log(arrayInicio)
+         }
+        intercambia([1,5,10,-2])
+
+        //13 De Número a String
+
+        function numString(){
+            const arrString =  [-1,-3,2]            
+            for (let i = 0; i < arrString.length; i++) {
+                if (arrString[i] < 0) {
+                    arrString[i] = ' Dojo '                   
+                }
+                
+            }
+            return arrString
+        }
+        console.log(numString())
          
 
     </script>
