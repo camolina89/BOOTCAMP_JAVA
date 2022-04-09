@@ -4,7 +4,7 @@
 $(function () {
 
     let imagenes = ""
-   for (let i = 1; i <= 150; i++) {
+   for (let i = 1; i <= 151; i++) {
     imagenes +=  "<img class='click-me' id='"+i+"' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/red-blue/transparent/"+i+".png'>"
     };
     $("#pokemones").html(imagenes)
