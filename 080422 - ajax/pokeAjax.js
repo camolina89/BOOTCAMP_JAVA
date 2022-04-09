@@ -1,16 +1,18 @@
-$(document).ready(function() {
-    let imagenes = ""
-   for (let i = 1; i <= 150; i++) {
-    imagenes +=  "<img class='click-me' id='"+i+"' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+i+".png'>"
-    };
-$("#pokemones").html(imagenes)
-});
+
 
 
 $(function () {
+
+    let imagenes = ""
+   for (let i = 1; i <= 150; i++) {
+    imagenes +=  "<img class='click-me' id='"+i+"' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/red-blue/transparent/"+i+".png'>"
+    };
+    $("#pokemones").html(imagenes)
+
+
     $("img").click(function (){
         let num = $(this).attr("id")
-        let ruta = $(this).attr("src")
+        
        
         $.ajax({
             type:"get",
@@ -18,16 +20,22 @@ $(function () {
             dataType: "json",
             success: function (response) {              
               $("#titulo").text(response.name)
-              $("#foto").attr("src", ruta)
 
-              let arrayTipo = response.types
-              let listaString =  '<ul>';
-              for (let i = 0; i < arrayTipo.length; i++) {
-                  listaString += `<li>${arrayTipo[i]}<br>`
-              }
               
-              $("#tipos").html(listaString)
-              console.log(listaString)
+              $("#foto").attr("src", response.sprites.other.home.front_default) // mostrar imagenes del pokemon en el pokedex
+
+
+              let listaTipo = ""
+              for (let i = 0; i < response.types.length; i++) {
+                  listaTipo += `<li>${response.types[i].type.name}<br>`
+                  
+              }
+
+              
+
+              
+              $("#tipos").html(listaTipo)
+              
 
 
               let height = response.height / 10
@@ -40,6 +48,8 @@ $(function () {
         })
     })
     })
+
+
 
 
     jQuery(document).ready(function() {

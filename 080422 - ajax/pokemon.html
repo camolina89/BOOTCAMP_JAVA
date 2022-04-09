@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
+    <link rel="stylesheet" href="pokeCss.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="pokeAjax.js"></script>
     <!-- Bootstrap CSS -->
@@ -15,20 +16,25 @@
     
         <!-- add http:// before the website name -->
         <div class="row">
-        <div class="col-6 border border-primary" id="pokemones">
+        <div class="col-8 border border-primary" id="pokemones">
             
         </div>
-        <div class="col-6 border border-danger text-center" id="texto">
-            <h1 id="titulo">Haz Click en un Pokemón!!</h1>            
+        <div class="col-4 border border-danger text-center" id="texto">
+            <h1>Captura un Pokemón!!</h1> 
+            <div id="pokedex" >       
+            <h1 class="texto" id="titulo"></h1>    
             <img id="foto" src="" alt=""> <br>
-            <span>Tipo: </span>
-            <div id="tipos"></div>
+            <p>Tipo: </p>
+            <p class="texto" id="tipos"></p>
             <br>
-            <span>Altura: </span>
-            <span id="altura"></span>
+            <p>Altura: </p>
+            <ul id="altura">
+                
+            </ul> 
             <br>
             <span>Peso: </span>
             <span id="peso"></span>
+            </div>
         </div>
         </div>
     

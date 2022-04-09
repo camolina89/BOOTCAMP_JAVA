@@ -1,0 +1,18 @@
+
+
+.texto {
+    text-transform : capitalize;
+  }
+
+  #pokedex{
+      background-color: azure;
+      
+      border: 30px solid red;
+      padding: 10px;
+
+  }
+
+  #foto{
+      width: 150px;
+      height: 150px;
+  }
