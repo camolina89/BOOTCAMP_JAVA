@@ -20,3 +20,16 @@ foreign key (pokedex) references pokemon_kanto(pokedex)
 );
 select * from pokemon_kanto;
 select * from mis_pokemones;
+
+select * from pokemon_kanto where pokedex > 50;
+select * from pokemon_kanto where tipo1 = 'psiquico' or tipo2 = 'psiquico';
+select * from pokemon_kanto limit 22;
+select pokedex as 'nro_pokedex',nombre as 'pokename' from pokemon_kanto limit 30;
+
+select count(*) as 'Total de Pokemones en Kanto' from pokemon_kanto;
+select tipo2, count(*) as 'Total de Pokemon de segundo tipo Roca' from pokemon_kanto 
+where tipo2 = 'roca' group by tipo2;
+
+select tipo2, count(*) as 'Total Tipo' from pokemon_kanto  group by tipo2 order by tipo2;
+
+

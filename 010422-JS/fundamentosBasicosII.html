@@ -67,8 +67,62 @@
         }
         console.log(doble([1,2,3]));
 
-        //5
-        
+        //5 Contar Positivos
+        function sumarpositivo (arrContar){
+            let arrayInicio = arrContar;
+            let ultimo = arrContar[arrContar.length - 1];
+            let sum = 0;
+            for (let i = 0; i < arrContar.length; i++) {
+                if (arrContar[i] > 0) {
+                    sum = sum + arrContar[i]
+                }                                      
+            }
+            arrayInicio[arrayInicio.length - 1] = sum;
+            console.log(arrayInicio);
+        }
+        const arreglo5 = [-1, 1, 1, 1];
+        sumarpositivo(arreglo5);
+
+        //6 Pares e Impares 
+        function paresImpares(arrparimpar){
+            let espar = '¡Es para Bien!';
+            let esimpar = '¡Qué Imparcial!';
+            let par = [];
+            let impar = [];
+
+
+            for (let i = 0; i < arrparimpar.length; i++) {
+                if (arrparimpar[i] % 2 == 0) {
+                    par.push(arrparimpar[i])
+                }else{
+                  impar.push(arrparimpar[i])
+                }   
+            }
+           if (par.length >= 3) {
+               console.log(espar)
+           }
+           if (impar.length >= 3) {
+               console.log(esimpar)
+           }
+        }
+        const arreglo6 = [1,3,5,2,6,6];
+        paresImpares(arreglo6);
+
+        //7 Incrementa los Segundos
+        const arr = [1, 2, 3, 4, 5, 6];
+        let arr7 = arr;
+        let plus = 0;
+        let posicion = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]%2 != 0){
+               arr7[i] = arr[i] + 1;
+            }
+            
+        }
+
+        console.log(arr7, arr)
+
 
 
     </script>
