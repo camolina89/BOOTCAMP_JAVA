@@ -50,10 +50,10 @@ public class Human {
 		this.health = health;
 	}
 	
-	
-	public void attack(int daño, Human enemigo) {
-		enemigo.setHealth(enemigo.getHealth()-daño);
-		System.out.println("Atacaste al enemigo con "+ daño +" de daño, su vida es "+ enemigo.getHealth() +".");
+	//MEtodo para atacar al enemigo
+	public void attack(Human enemigo) {
+		enemigo.setHealth(enemigo.getHealth()-this.getStrength());
+		System.out.println("Atacaste al enemigo con "+ this.getStrength() +" de daño, su vida es "+ enemigo.getHealth() +".");
 	}
 	
 	
